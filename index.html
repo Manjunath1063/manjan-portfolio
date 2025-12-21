@@ -1,0 +1,116 @@
+html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manjan | Java Backend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0f1c;--card:#020617;--accent:#22d3ee;
+      --text:#e5e7eb;--muted:#94a3b8;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:Inter,system-ui;background:var(--bg);
+      color:var(--text);line-height:1.6;
+    }
+    header{
+      min-height:100vh;display:grid;place-items:center;text-align:center;
+    }
+    .hero{max-width:900px;padding:24px}
+    .badge{
+      display:inline-block;padding:6px 12px;border-radius:999px;
+      background:rgba(34,211,238,.12);color:var(--accent);font-weight:600;
+    }
+    h1{font-size:3rem;margin:18px 0 10px}
+    .subtitle{color:var(--muted)}
+    .cta{margin-top:22px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn{
+      padding:12px 18px;border-radius:12px;border:1px solid #0b1a2b;
+      background:var(--card);color:var(--text);text-decoration:none;
+    }
+    .btn.primary{
+      background:linear-gradient(180deg,#22d3ee,#06b6d4);
+      color:#001018;font-weight:700;
+    }
+    section{max-width:1100px;margin:auto;padding:80px 20px}
+    h2{text-align:center;color:var(--accent);margin-bottom:40px}
+    .summary{text-align:center;max-width:800px;margin:auto;color:#cbd5f5}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+    .card{
+      background:var(--card);padding:24px;border-radius:16px;
+      border:1px solid #0b1a2b;
+    }
+    footer{
+      background:#020617;padding:24px;text-align:center;color:var(--muted)
+    }
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
+
+<header id="home">
+  <div class="hero">
+    <span class="badge">Backend • Java • Spring Boot</span>
+    <h1>Manjan</h1>
+    <p class="subtitle">Java Backend Developer • Spring Boot • REST APIs • SQL</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="Umanjunath.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>Profile Summary</h2>
+  <p class="summary">
+    Java Backend Developer with hands-on experience in Java, Spring Boot, REST APIs, and SQL.
+    Strong fundamentals in Core Java and Java 8 with practical backend project experience.
+  </p>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Backend</h3>
+      <p>Java, Java 8, Spring Boot, REST APIs, OOP</p>
+    </div>
+    <div class="card">
+      <h3>Database & Tools</h3>
+      <p>MySQL, JPA, Hibernate, Git, GitHub, Postman</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Student Management System</h3>
+      <p>Spring Boot backend with CRUD APIs, layered architecture, and MySQL integration.</p>
+    </div>
+    <div class="card">
+      <h3>Wildlife Tour Management System</h3>
+      <p>Backend APIs for managing tours, bookings, validations, and exception handling.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="summary">
+    <a href="https://www.linkedin.com/in/u-manjunath-9ab513288" target="_blank">LinkedIn</a> •
+    <a href="https://github.com/Manjunath1063" target="_blank">GitHub</a> •
+    <a href="mailto:umanjunath7210@gmail.com">umanjunath7210@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  © 2025 Manjan | Java Backend Developer
+</footer>
+
+</body>
+</html>
