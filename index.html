@@ -3,12 +3,12 @@ html = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manjan | Java Backend Developer</title>
+  <title>U Manjunath | Java Backend Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0a0f1c;--card:#020617;--accent:#22d3ee;
-      --text:#e5e7eb;--muted:#94a3b8;
+      --bg:#0a0f1c;--panel:#0f172a;--card:#020617;
+      --accent:#22d3ee;--muted:#94a3b8;--text:#e5e7eb;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
@@ -16,40 +16,69 @@ html = """<!DOCTYPE html>
       margin:0;font-family:Inter,system-ui;background:var(--bg);
       color:var(--text);line-height:1.6;
     }
+    nav{
+      position:fixed;top:0;width:100%;z-index:10;
+      background:rgba(2,6,23,.85);backdrop-filter:blur(10px);
+      border-bottom:1px solid #0b1a2b;
+    }
+    nav ul{
+      display:flex;gap:22px;list-style:none;margin:0;padding:14px 22px;
+      justify-content:center;
+    }
+    nav a{color:var(--muted);text-decoration:none;font-weight:500}
+    nav a:hover{color:var(--accent)}
     header{
       min-height:100vh;display:grid;place-items:center;text-align:center;
+      padding-top:60px;
     }
-    .hero{max-width:900px;padding:24px}
+    .hero{max-width:900px;padding:24px;animation:fadeUp .9s ease}
     .badge{
       display:inline-block;padding:6px 12px;border-radius:999px;
       background:rgba(34,211,238,.12);color:var(--accent);font-weight:600;
     }
-    h1{font-size:3rem;margin:18px 0 10px}
-    .subtitle{color:var(--muted)}
+    h1{font-size:3.1rem;margin:18px 0 10px}
+    .subtitle{color:var(--muted);font-size:1.15rem}
     .cta{margin-top:22px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
     .btn{
       padding:12px 18px;border-radius:12px;border:1px solid #0b1a2b;
-      background:var(--card);color:var(--text);text-decoration:none;
+      background:#020617;color:var(--text);text-decoration:none;
+      transition:transform .2s ease, box-shadow .2s ease;
     }
     .btn.primary{
       background:linear-gradient(180deg,#22d3ee,#06b6d4);
       color:#001018;font-weight:700;
     }
-    section{max-width:1100px;margin:auto;padding:80px 20px}
-    h2{text-align:center;color:var(--accent);margin-bottom:40px}
-    .summary{text-align:center;max-width:800px;margin:auto;color:#cbd5f5}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    section{max-width:1100px;margin:auto;padding:90px 20px}
+    h2{text-align:center;color:var(--accent);font-size:2.1rem;margin-bottom:40px}
+    .summary{text-align:center;max-width:820px;margin:auto;color:#cbd5f5}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
     .card{
-      background:var(--card);padding:24px;border-radius:16px;
-      border:1px solid #0b1a2b;
+      background:var(--card);border:1px solid #0b1a2b;
+      border-radius:18px;padding:26px;
+      transition:transform .25s ease, box-shadow .25s ease;
     }
+    .card:hover{transform:translateY(-6px);box-shadow:0 30px 80px rgba(34,211,238,.2)}
+    ul{padding-left:18px}
+    li{margin-bottom:8px;color:#cbd5f5}
     footer{
-      background:#020617;padding:24px;text-align:center;color:var(--muted)
+      background:#020617;border-top:1px solid #0b1a2b;
+      padding:28px;text-align:center;color:var(--muted)
     }
     a{color:var(--accent)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1}}
   </style>
 </head>
 <body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 <header id="home">
   <div class="hero">
@@ -67,20 +96,28 @@ html = """<!DOCTYPE html>
   <h2>Profile Summary</h2>
   <p class="summary">
     Java Backend Developer with hands-on experience in Java, Spring Boot, REST APIs, and SQL.
-    Strong fundamentals in Core Java and Java 8 with practical backend project experience.
+    Strong in Core Java, Java 8, layered architecture, and backend best practices.
   </p>
 </section>
 
-<section>
+<section id="skills">
   <h2>Technical Skills</h2>
   <div class="grid">
     <div class="card">
       <h3>Backend</h3>
-      <p>Java, Java 8, Spring Boot, REST APIs, OOP</p>
+      <ul>
+        <li>Java, Java 8, Core Java</li>
+        <li>Spring Boot, REST APIs</li>
+        <li>OOP, Collections</li>
+      </ul>
     </div>
     <div class="card">
       <h3>Database & Tools</h3>
-      <p>MySQL, JPA, Hibernate, Git, GitHub, Postman</p>
+      <ul>
+        <li>SQL, MySQL</li>
+        <li>JPA, Hibernate</li>
+        <li>Git, GitHub, Postman</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -90,11 +127,19 @@ html = """<!DOCTYPE html>
   <div class="grid">
     <div class="card">
       <h3>Student Management System</h3>
-      <p>Spring Boot backend with CRUD APIs, layered architecture, and MySQL integration.</p>
+      <ul>
+        <li>CRUD APIs with Spring Boot</li>
+        <li>Layered architecture</li>
+        <li>MySQL integration</li>
+      </ul>
     </div>
     <div class="card">
       <h3>Wildlife Tour Management System</h3>
-      <p>Backend APIs for managing tours, bookings, validations, and exception handling.</p>
+      <ul>
+        <li>Tour & booking APIs</li>
+        <li>Validation & exception handling</li>
+        <li>Postman-tested endpoints</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -109,7 +154,7 @@ html = """<!DOCTYPE html>
 </section>
 
 <footer>
-  © 2025 Manjan | Java Backend Developer
+  <p>© 2025 U Manjan | Java Backend Developer</p>
 </footer>
 
 </body>
