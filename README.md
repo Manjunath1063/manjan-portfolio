@@ -6,7 +6,8 @@ The portfolio is designed with a modern UI, clean structure, and focuses on high
 
 ## 🌐 Live Portfolio
 
-👉 **[Click here to view the live site]([https://manjunath1063.github.io/portfolio/](https://manjunath1063.github.io/manjan-portfolio/))**
+👉 **[Click here to view the live site]()**
+
 
 
 👨‍💻 About Me
