@@ -1,12 +1,13 @@
-🚀 Manjan | Java Backend Developer Portfolio
+🚀 U Manjunath | Java Backend Developer Portfolio
 
 This repository contains the source code for my personal developer portfolio website, built to showcase my backend skills, projects, and professional profile as a Java Backend Developer.
 
 The portfolio is designed with a modern UI, clean structure, and focuses on highlighting real-world backend development experience using Java and Spring Boot.
 
-📌 Live Preview
+## 🌐 Live Portfolio
 
-👉 
+👉 **[Click here to view the live site](https://manjunath1063.github.io/portfolio/)**
+
 
 👨‍💻 About Me
 
