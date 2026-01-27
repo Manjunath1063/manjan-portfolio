@@ -4,7 +4,7 @@ This repository contains the source code for my personal developer portfolio web
 
 The portfolio is designed with a modern UI, clean structure, and focuses on highlighting real-world backend development experience using Java and Spring Boot.
 
-## 🌐 Live Portfolio
+## 🌐 Live Portfolio.
 
 👉 **[Click here to view the live site](https://manjunath1063.github.io/manjan-portfolio/)**
 
